@@ -1,0 +1,13 @@
+---
+applications:
+- name: atp
+  hosts:
+    - atp
+  memory: 1G
+  domain: development.cfapps.alex.examples.cf
+  instances: 1
+  path: target/jhipster-sample-application-0.0.1-SNAPSHOT.war
+  buildpack: java_buildpack_offline
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+    JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{ enabled: false }'

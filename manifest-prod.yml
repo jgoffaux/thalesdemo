@@ -1,0 +1,14 @@
+---
+applications:
+- name: atp
+  hosts:
+    - atp
+  memory: 1G
+  domain: production.cfapps.alex.examples.cf
+  instances: 3
+  path: target/jhipster-sample-application-0.0.1-SNAPSHOT.war
+  buildpack: java_buildpack_offline
+  services: 
+    - dataSource
+  env:
+    SPRING_PROFILES_ACTIVE: prod
