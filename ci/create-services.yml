@@ -1,0 +1,13 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: lwieske/cloudfoundrycli
+
+inputs:
+- name: git-repo
+
+run:
+  path: git-repo/ci/create-services.sh
