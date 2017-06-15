@@ -148,7 +148,7 @@ jobs:
     params:
       manifest: build/manifest-dev.yml
       current_app_name: atp
-      path: build/jhipster-sample-application-0.0.1-SNAPSHOT.jar
+      path: build/jhipster-sample-application-0.0.1-SNAPSHOT.war
   - put: slack-alert
     params:
       channel: '#circle-of-code'
