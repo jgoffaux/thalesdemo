@@ -13,6 +13,7 @@ resources:
   type: git
   source:
     uri: https://gitlab.ippon.fr/jparnaudeau/app-thales-paas
+    branch: v1.0
 
 - name: cf-dev
   type: cf
