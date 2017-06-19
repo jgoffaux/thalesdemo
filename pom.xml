@@ -346,6 +346,7 @@
         <!-- jhipster-needle-maven-add-dependency -->
     </dependencies>
     <build>
+        <finalName>application</finalName>
         <defaultGoal>spring-boot:run</defaultGoal>
         <plugins>
             <plugin>
