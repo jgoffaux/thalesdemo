@@ -62,7 +62,7 @@ liquibase:
 #        keyAlias: jhipsterSampleApplication
 # ===================================================================
 server:
-    port: 8080
+    port: 5000
     compression:
         enabled: true
         mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
@@ -106,7 +106,7 @@ jhipster:
         logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
             enabled: false
             host: localhost
-            port: 5000
+            port: 5001
             queue-size: 512
 
 # ===================================================================

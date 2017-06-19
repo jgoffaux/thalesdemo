@@ -6,7 +6,7 @@ applications:
   memory: 1G
   domain: development.cfapps.alex.examples.cf
   instances: 1
-  path: target/jhipster-sample-application-0.0.1-SNAPSHOT.war
+  path: target/application.jar
   buildpack: java_buildpack_offline
   env:
     SPRING_PROFILES_ACTIVE: dev
