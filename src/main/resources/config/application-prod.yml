@@ -21,9 +21,9 @@ spring:
             enabled: false
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:postgresql://localhost:5432/jhipsterSampleApplication
-        username: jhipsterSampleApplication
-        password:
+        url: ${SERVICE_JDBC_URL:jdbc:postgresql://localhost:5432/jhipsterSampleApplication}
+        username: ${SERVICE_JDBC_USER:jhipsterSampleApplication}
+        password: ${SERVICE_JDBC_PWD:}
     jpa:
         database-platform: io.github.jhipster.domain.util.FixedPostgreSQL82Dialect
         database: POSTGRESQL
@@ -62,7 +62,7 @@ liquibase:
 #        keyAlias: jhipsterSampleApplication
 # ===================================================================
 server:
-    port: 8080
+    port: 5000
     compression:
         enabled: true
         mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
@@ -106,7 +106,7 @@ jhipster:
         logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
             enabled: false
             host: localhost
-            port: 5000
+            port: 5001
             queue-size: 512
 
 # ===================================================================
